@@ -21,6 +21,7 @@ import {
     tripguide,
     threejs,
     meity,
+    iCustomer,
     express,
     flask,
     stripe,
@@ -130,6 +131,19 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "FullStack Developer",
+      company_name: "iCustomer (US - Based Stealth AI Startup)",
+      icon: iCustomer,
+      iconBg: "#383E56",
+      date: "April 2023 - Present",
+      points: [
+        "Provided seamless UI/UX for all the SaaS products the company offer.",
+        "Developed a comprehensive mind map skeleton with robust error handling capabilities.",
+        "Efficiently integrated all the APIs into SaaS products, along with robust error handling techniques.",
+        "Engineered a Chrome Extension, incorporating web scraping functionality.",
+      ],
+    },
     {
       title: "AI-ML Intern",
       company_name: "Ministry of Electronics and Information Technology, Delhi",

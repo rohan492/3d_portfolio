@@ -27,17 +27,16 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      //IMPORT USING import.meta.env.VITE_(your varaiable name)
-      //YOUR EMAILJS SERVICE ID,
-      //YOUR EMAILJS TEMPLATE ID,
+      import.meta.env.VITE_EMAILJS_SERVICE_CODE,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_CODE,
       {
         from_name: form.name,
-        to_name: "RECEIVER'S NAME",
+        to_name: 'Rohan',
         from_email: form.email,
-        to_email: "RECEIVER'S EMAIL",
+        to_email: import.meta.env.VITE_RECEIVER_EMAIL,
         message: form.message,
       },
-      //YOUR EMAILJS PUBLIC KEY
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
     )
     .then(() => {
       setLoading(false);
